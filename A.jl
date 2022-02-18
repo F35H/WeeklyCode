@@ -30,9 +30,9 @@ function TauCalc(tauMax::Int, tauDivs::Array, tauVals::Array)
             itr = i
             i^=2
             var = -1/i
-            tauDivs[1] = (e*0)^2
+            tauDivs[1] = (e*i)^2
             tauDivs[1] /= 24 
-            tauDivs[2] = (var*0)
+            tauDivs[2] = (var*i)
             tauDivs[3] = (589*sqrt(complex(-var)))
             tauDivs[3] /= 20
             tauVals[itr] = sum(tauDivs)
@@ -55,6 +55,7 @@ end
 function TauPlot(tauVals::Array, n)
 println("Would you like to see a Plot for n to x values? y/n")
     if (readline() == "y")
+        println("Enter Character in Console to Exit")
         gui(plot(1:tauMax,tauVals))
     else
         exit()
@@ -64,5 +65,5 @@ end
 
 TauCalc(tauMax, tauDivs, tauVals)
 ASum(imNums)
-TauPlot(tauVals, n)uy
+TauPlot(tauVals, n)
 exit()
