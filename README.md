@@ -1,6 +1,5 @@
 # RandFunc
 Random Functions Collected and put into Julia. I do this for fun.
-<<<<<<< HEAD
 
 ===============================================================
 Func List:
@@ -11,4 +10,4 @@ A:https://cdn.discordapp.com/attachments/769031254959587330/943626247479636008/S
 ================================================================
 Func List:
 A: https://cdn.discordapp.com/attachments/769031254959587330/943626247479636008/Screenshot_20220216-120314_Instagram.jpg
->>>>>>> 1597715716b28f49e53de5f40788bf0ca4bbb726
+B: https://oeis.org/A328933
