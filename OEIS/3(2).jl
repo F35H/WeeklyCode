@@ -2,6 +2,9 @@ using Plots
 
 #=
 Continuation of Three. I thought of a different one
+
+This is unfinished. I got stuck on converting the binary [hence the mess in the while loop].
+Maybe I'll return to it.
 =#
 
 (function () 
