@@ -9,9 +9,9 @@ numMax = 200
 
 nums = ( function ()
   global lpMax
-  maxiNum::UInt128 = (2^(63)-1)
+  maxiNum::UInt64 = (2^(63)-1)
   arrPos = 1 
-  numArr = zeros(Int128, numMax)
+  numArr = zeros(Int64, numMax)
   itrcnt = 3
   chck = true
   i = 1
@@ -21,7 +21,7 @@ nums = ( function ()
   
     if (chck == true)
      str = string(-(i))
-     num = parse(Int128, str[1:2])
+     num = parse(Int64, str[1:2])
      chck = false
    else
      num += parse(Int8, str[itrcnt])
