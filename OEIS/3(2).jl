@@ -4,6 +4,7 @@ using Plots
 Continuation of Three. I thought of a different one
 
 This is unfinished. I got stuck on converting the binary [hence the mess in the while loop].
+I believe I'm going to have to manually make a binary conversion.
 Maybe I'll return to it.
 =#
 
@@ -23,16 +24,15 @@ Maybe I'll return to it.
   
   while (dnI != clBinHalf && upI != flBinHalf)
       
-     dnIArr[I] = length( string( parse(Int64,  bitstring(dnI) )))
+     dnIArr[I] = length( string(dnI, base=2))
      dnI -= 1
       I -= 1
           
-      upIArr[upI] = length( string( parse(Int64, bitstring(upI) ) ))
+      upIArr[upI] = length( string(upI, base=2))
       upI += 1
     
   end
   
-  println(dnIArr; upIArr)
   
 end)()
 

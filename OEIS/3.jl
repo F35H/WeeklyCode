@@ -4,6 +4,7 @@ using Plots
 Another OEIS function. This one calculates the length of binary as a number continues upwards!
 
 Plots wasn't working correctly here for some reason...
+  [Update]...a restart of Julia worked apparently.
 =#
 
 println("Enter Maximum Number Please")
@@ -34,14 +35,10 @@ println("Enter Maximum Number Please")
     if (readline() == "y" || readline() == "yes")
     
       println("Directory? [Use only backslashes]")
-      r = readline()
-      if (last(r) == \)
-        png(string(raw"", readline(), "\")
-      else
-        png(string(raw"", readline(), "\\")
-    end      
+      png(readline())
+    end
   end
   
 end )()
 
-
+exit()
