@@ -2,7 +2,11 @@ using Random
 using Plots
 #=
 Julia Func B:
- This is a sequence of numbers I found on the OEIS and expanded to large porportions. I was shocked to find the minimum would always be -199.
+ This is a sequence of numbers I found on the OEIS and expanded to large porportions.
+ I was shocked to find the minimum would always be -199.
+ 
+ Perhaps I'll come back and redo this one later. i got a little frustrated, so this looks pretty bad
+ with how the variables are laid out.
 =#
 
 numMax = 200
