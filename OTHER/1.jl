@@ -23,19 +23,24 @@ tauDivs = zeros(Float64, 3)
 tauVals = zeros(Float64, tauMax)
 imNums = zeros(Float64, tauMax)
 
-function TauCalc(tauMax::Int, tauDivs::Array, tauVals::Array)
-    global n #Can't Stop Me
+function TauCalc(tauMax::Int, tauDivs::Array)
+    global tauVals
+    global n 
+
     if tauMax > 0
         for i in n
             itr = i
+            
             i^=2
             var = -1/i
+            
             tauDivs[1] = (e*i)^2
             tauDivs[1] /= 24 
             tauDivs[2] = (var*i)
             tauDivs[3] = (589*sqrt(complex(-var)))
             tauDivs[3] /= 20
             tauVals[itr] = sum(tauDivs)
+            
         end
     else
     println("Natural Numbers can't be lower than One")
@@ -44,6 +49,7 @@ end
 
 function ASum(imNums::Array)
     i = 1
+    
     for var in tauVals
         if(typeof(var) == Complex)
             imNums[i] = var
@@ -53,17 +59,20 @@ function ASum(imNums::Array)
 end
 
 function TauPlot(tauVals::Array, n)
-println("Would you like to see a Plot for n to x values? y/n")
+  println("Would you like to see a Plot for n to x values? y/n")
+    
     if (readline() == "y")
         println("Enter Character in Console to Exit")
         gui(plot(1:tauMax,tauVals))
+        
     else
         exit()
     end
     readline()
 end
 
-TauCalc(tauMax, tauDivs, tauVals)
+TauCalc(tauMax, tauDivs)
 ASum(imNums)
 TauPlot(tauVals, n)
+
 exit()
