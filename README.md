@@ -1,13 +1,1 @@
-# RandFunc
-Random Functions Collected and put into Julia. I do this for fun.
-
-===============================================================
-Func List:
-A:https://cdn.discordapp.com/attachments/769031254959587330/943626247479636008/Screenshot_20220216-120314_Instagram.jpg
-
-
-=======
-================================================================
-Func List:
-A: https://cdn.discordapp.com/attachments/769031254959587330/943626247479636008/Screenshot_20220216-120314_Instagram.jpg
-B: https://oeis.org/A328933
+This is a collection of algorithms for a Youtube series called Weekly Code. Every week there's a new algorithm to show both old and new simply to encourage the practice of coding.
