@@ -10,7 +10,7 @@ The current directory files in order is listed here:
 	- W01.02.jl
 - OTHER/W02.jl
 - KNOWNALGO/
-	-W0301.py
-	-W0302.py
-	-W0303.py
+	- W0301.py
+	- W0302.py
+	- W0303.py
 - OTHER/W04.py
