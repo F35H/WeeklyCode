@@ -13,9 +13,9 @@ if __name__ == "__main__":
   system("cls")
 
   tStr = str( time.time() )
-  t = int( tStr[-4:-2] + "1")       
+  t = int( tStr[-4:-2])       
 
-  MDMethSet = W0302.MDMethod(t)
+  MDMethSet = W0302.MDMethod( seedList[t] )
   MDWSeqSet = set()
   MDSqreSet = set()
         
@@ -46,7 +46,6 @@ if __name__ == "__main__":
     
     
   mpl.use("TkAgg")
-    
   plt.style.use("fast")
   
   f, plts = plt.subplots(3)
