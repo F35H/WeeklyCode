@@ -1,3 +1,6 @@
+#=
+  Subtle rework 
+=#
 function bin_length_long(s::AbstractString)  
   binNum = parse(UInt, s)
   

@@ -15,3 +15,4 @@ The current directory files in order is listed here:
 	- W0302.py
 	- W0303.py
 - OTHER/W04/W04.py
+- OEIS/W05/W05.py
